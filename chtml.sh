@@ -23,6 +23,7 @@ function chtml() {
             IFS="{}"
             read -ra lrr <<< "$line"
             len=${#lrr[@]}
+            echo "$len \"$line\""
             
             #checks if line matches input format
             if (( $len == 2 )) && [[ ${lrr[0]} =~ ^\ *$ ]] && ! [[ ${lrr[1]} =~ ^\ *$ ]]; then
@@ -31,7 +32,8 @@ function chtml() {
                 space="${lrr[0]}"
                 temp="${lrr[1]}"
                 if test -f "$temp"; then
-                    while read -r tline; do
+                    while IFS= read -r tline; do
+                        echo "$space$tline"
                         echo "$space$tline" >> "$out"
                     done < "$temp"
                 else
