@@ -1,0 +1,7 @@
+<!-- Top Navigation Bar -->
+<nav class="topnav">
+    <a ~1 href="tab1.html">Tab 1</a>
+    <a ~2 href="tab2.html">Tab 2</a>>
+    <a ~3 href="tab3.html">Tab 3</a>
+</nav>
+

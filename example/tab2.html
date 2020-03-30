@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            /* Main Header Formating */ 
+            h1 { 
+            color: black; 
+            font-family: Tahoma; 
+            font-size: 48px; 
+            text-align: center; 
+            } 
+            
+            
+            /* Top Navigation Bar Formatting */ 
+            .topnav { /* Navigation Bar */ 
+            overflow: hidden; 
+            background-color: black; 
+            } 
+            
+            .topnav a { /* Navigation Bar Links */ 
+            float: left; 
+            color: ivory; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            font-size: 17px; 
+            font-family: 'Courier New', Courier, monospace; 
+            font-weight: bold; 
+            } 
+            
+            .topnav a:hover { /* When Cursor Hovers Over Links */ 
+            background-color: rgb(228, 228, 228); 
+            color: black; 
+            } 
+            
+            .topnav a.active { /* When Linked Page is Displayed */ 
+            background-color: darkcyan; 
+            color: white; 
+            } 
+        </style>
+    </head>
+    <body>
+        <!-- Main Site Header -->
+        <header>
+            <h1>My Website</h1>
+        </header>
+
+
+        <!-- Top Navigation Bar --> 
+        <nav class="topnav"> 
+        <a href="tab1.html">Tab 1</a> 
+        <a class="active" href="tab2.html">Tab 2</a>> 
+        <a href="tab3.html">Tab 3</a> 
+        </nav> 
+        
+
+
+        <!-- Page Content -->
+        <div style="padding-left: 16px">
+            <p>
+                Tab 2
+            </p>
+        </div>
+    </body>
+</html>

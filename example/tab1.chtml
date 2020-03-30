@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            {mycss.css}
+        </style>
+    </head>
+    <body>
+        <!-- Main Site Header -->
+        <header>
+            <h1>My Website</h1>
+        </header>
+
+
+        {navbar.cpart 1:class="active"}
+
+
+        <!-- Page Content -->
+        <div style="padding-left: 16px">
+            <p>
+                Tab 1
+            </p>
+        </div>
+    </body>
+</html>
